@@ -27,7 +27,7 @@ class ProductFactory extends Factory
     {
         return [
             // 'product_categories_id' => fake()->numberBetween(1, 10),
-            'name' => fake()->name(),
+            'name' => fake()->word(),
             'price' => fake()->randomNumber(5, true),
             'image' => Str::random(30) . '.jpg',
             'created_by' => fake()->numberBetween(1, 15)

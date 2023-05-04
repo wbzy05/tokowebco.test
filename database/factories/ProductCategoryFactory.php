@@ -25,7 +25,7 @@ class ProductCategoryFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => fake()->name(),
+            'name' => fake()->word(),
             'created_by' => rand(1, 15)
         ];
     }
